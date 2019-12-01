@@ -227,7 +227,7 @@ void imprimeClientes(FILE*arqClientes)
         fread(&cod, sizeof(int), 1, arqClientes);
         fread(tel, sizeof(char), sizeof(tel), arqClientes);
 
-        if(cod != -1)
+        if(cod != -1 && cod != 0)
         {
             printf("Nome: %s\n", nome);
             printf("Código: %d\n", cod);
@@ -1125,19 +1125,20 @@ void imprimeClienteInterno(FILE*arqDados)
         fread(&cod, sizeof(int), 1, arqDados);
         fread(tel, sizeof(char), sizeof(tel), arqDados);
 
-        printf("Nome: %s\n", nome);
-        printf("Código: %d\n", cod);
-        printf("Telefone: %s\n", tel);
-        printf("_____________________________________________________\n");
+        if(cod != 0) {
 
-        if(cont == 3)
-        {
-            printf("......................................POSICAO................:: %d\n", pos);
-            cont = 0;
-            pos++;
+            printf("Nome: %s\n", nome);
+            printf("Código: %d\n", cod);
+            printf("Telefone: %s\n", tel);
+            printf("_____________________________________________________\n");
+
+            if (cont == 3) {
+                printf("......................................POSICAO................:: %d\n", pos);
+                cont = 0;
+                pos++;
+            } else
+                cont++;
         }
-        else
-            cont++;
 
     }
 }
@@ -1186,12 +1187,12 @@ void imprimeMetaDados(FILE* arqMeta)
 {
     rewind(arqMeta);
     int num;
-    printf("                            METADADOS \n");
+    printf("  METADADOS \n");
     while(fread(&num, sizeof(int), 1, arqMeta) > 0)
     {
         printf("Raiz: %d\n", num);
         fread(&num, sizeof(int), 1, arqMeta);
-        //printf("Flag: %d\n", num);
+        printf("Flag: %d\n", num);
         fread(&num, sizeof(int), 1, arqMeta);
         printf("Próxima Posição de folha: %d\n", num);
         fread(&num, sizeof(int), 1, arqMeta);
@@ -1203,5 +1204,5 @@ void internoCliente(FILE* arqDados, FILE* arqNoInterno, FILE* arqMeta)
 {
     imprimeClienteInterno(arqDados);
     imprimeNoInternoClt(arqNoInterno);
-    imprimeMetaDados(arqMeta);
+//    imprimeMetaDados(arqMeta);
 }
