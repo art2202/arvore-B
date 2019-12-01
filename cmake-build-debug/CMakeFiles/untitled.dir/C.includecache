@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/art/CLionProjects/arvore B+/cabecalho.h
+
+/home/art/CLionProjects/arvore B+/main.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+cabecalho.h
+/home/art/CLionProjects/arvore B+/cabecalho.h
+
