@@ -8,9 +8,9 @@
 
 int main() {
 
-    FILE* arqMetaClt = fopen("metaClientes.dat", "a+b");
-    FILE*  arqClientes = fopen("clientes.dat", "a+b");
-    FILE* arqNoClt = fopen("niClientes.dat", "a+b");
+    FILE* arqMetaClt = fopen("metaClientes.dat", "r+b");
+    FILE*  arqClientes = fopen("clientes.dat", "r+b");
+    FILE* arqNoClt = fopen("niClientes.dat", "r+b");
 
     ArvB* arvCl;
     int sel = 0;
@@ -542,9 +542,7 @@ void particiona(ArvB* arv,  Cliente* cliente, FILE*arqMeta, FILE*arqDados, FILE*
 
             atualizaNo(arv->pai->filho[i], arqMeta, arqDados, arqNoInterno);
         }
-
     }
-
 }
 
 void insere(ArvB* arv, Cliente* cliente, FILE* arqMeta, FILE* arqDados, FILE*arqNoInterno)

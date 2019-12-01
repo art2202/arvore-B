@@ -11,7 +11,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e531a97f-5ea4-483c-b5a9-33b1f4b40d8a" name="Default Changelist" comment="" />
+    <list default="true" id="e531a97f-5ea4-483c-b5a9-33b1f4b40d8a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled.dir/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/clientes.dat" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/clientes.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/metaClientes.dat" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/metaClientes.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/niClientes.dat" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/niClientes.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/untitled" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/untitled" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +39,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ED2-Bplus-Tree" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -64,7 +72,8 @@
       <updated>1575147085608</updated>
       <workItem from="1575147086977" duration="9708000" />
       <workItem from="1575163231983" duration="634000" />
-      <workItem from="1575213103308" duration="5329000" />
+      <workItem from="1575213103308" duration="8334000" />
+      <workItem from="1575238922640" duration="3055000" />
     </task>
     <task id="LOCAL-00001" summary="aaaa">
       <created>1575234902345</created>
@@ -88,7 +97,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
